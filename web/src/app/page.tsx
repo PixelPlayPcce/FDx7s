@@ -104,7 +104,7 @@ const Categories = () => {
 
   return <section className="p-4 grid grid-rows-2 md:grid-rows-1 md:grid-cols-2">
     <div className="   p-8">
-      {place_categotries.map((_,i) => <Link  href={`/places?${place_categotries[selectedCat].name}`} onMouseOver={() => setSelcetedCat(i)} className={cn("text-4xl block mb-4 cursor-pointer transition-all", selectedCat == i && 'text-orange-300 md:indent-8')} key={i}>{_.name}</Link>)}
+      {place_categotries.map((_,i) => <Link  href={`/places?${place_categotries[selectedCat].name}`} onMouseOver={() => setSelcetedCat(i)} className={cn("text-4xl hover:underline block mb-4 cursor-pointer transition-all", selectedCat == i && 'text-orange-300 md:indent-8')} key={i}>{_.name}</Link>)}
     </div>
     <div className="h-[60vh] overflow-hidden">
       <Image alt="h-full w-full aspect-square object-cover" src={place_categotries[selectedCat].img} height={800} width={800} />

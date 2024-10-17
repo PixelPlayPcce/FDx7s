@@ -12,21 +12,22 @@ const StarRating = ({ rating = 5 }) => (
   </div>
 );
 
-const InfoItem = ({ icon: Icon, text }) => (
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const InfoItem = ({ icon: Icon, text }:{icon:any;text:string}) => (
   <div className="flex items-center gap-2">
     <Icon className="w-5 h-5 text-gray-600" />
     <span>{text}</span>
   </div>
 );
 
-const MenuItem = ({ name, price }) => (
+const MenuItem = ({ name, price }:{name:string;price:number}) => (
   <div className="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow">
     <h3 className="font-bold mb-2">{name}</h3>
     <p className="text-gray-600 text-sm">From ${price}</p>
   </div>
 );
 
-const ReviewCard = ({ name, initials, timeAgo, rating, comment }) => (
+const ReviewCard = ({ name, initials, timeAgo, rating, comment }:{name:string;initials:string;timeAgo:string;rating:number;comment:string}) => (
   <div className="bg-gray-50 p-6 rounded-xl">
     <div className="flex items-center gap-4 mb-3">
       <div className="w-10 h-10 bg-teal-200 rounded-full flex items-center justify-center">

@@ -196,7 +196,7 @@ const Hero = () => {
     }, 2000);
 
     return () => clearInterval(interval); // Clear the interval on unmount
-  }, []);
+  }, [handleNext]);
 
   return (
     <>

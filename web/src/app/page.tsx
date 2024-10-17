@@ -41,7 +41,7 @@ export default function Home() {
 }
 
 const Showcase = () => {
-  return <section className="relative p-12 lg:px-40 pb-12 pt-24 mb-0 overflow-hidden">
+  return <section className="relative p-12 lg:px-40 pb-12 md:pb-24 pt-24 mb-0 overflow-hidden">
     <h3 className="italic">
       Our Favorite Goan this month
     </h3>
@@ -102,7 +102,7 @@ const Categories = () => {
 
 
 
-  return <section className="p-4 grid grid-rows-2 md:grid-cols-2">
+  return <section className="p-4 grid grid-rows-2 md:grid-rows-1 md:grid-cols-2">
     <div className="   p-8">
       {place_categotries.map((_,i) => <Link  href={`/places?${place_categotries[selectedCat].name}`} onMouseOver={() => setSelcetedCat(i)} className={cn("text-4xl block mb-4 cursor-pointer transition-all", selectedCat == i && 'text-orange-300 md:indent-8')} key={i}>{_.name}</Link>)}
     </div>
@@ -212,8 +212,9 @@ const Hero = () => {
           <path fill-rule="evenodd" clip-rule="evenodd" d="M25 0H0C13.8071 0 25 11.1929 25 25V0Z" fill="white" />
         </svg>
 
-        <AnimatePresence mode="sync">
+        <AnimatePresence mode="popLayout">
           <MImage
+          key={currentIndex}
             // transition={{ duration: 300 }}
             className="md:aspect-auto h-[80vh] rounded-xl aspect-[3/4] sm:aspect-[4/3] object-cover w-full "
             initial={{ opacity: 0 }}

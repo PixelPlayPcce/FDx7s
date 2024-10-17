@@ -86,7 +86,7 @@ const Banner = ({ color }: { color: 'green' | 'red'|'black' }) => {
 
     <Marquee>
 
-<h1 className="whitespace-nowrap text-2xl font-bold italic">GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA GOA </h1>
+<h1 className="whitespace-nowrap text-2xl font-bold italic"> The Goan  The Goan  The Goan  The Goan  The Goan  The Goan  The Goan  The Goan  The Goan  The Goan  The Goan  The Goan  The Goan  The Goan  The Goan  The Goan  The Goan  The Goan </h1>
     </Marquee>
     </div>
   </>

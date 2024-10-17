@@ -65,20 +65,20 @@ const Showcase = () => {
   </section>
 }
 
-const Cards = () => {
-  return <section className="min-h-96 my-20 px-24 flex items-center gap-12 justify-center">
-    <Card />
-    <Card />
-    <Card />
-  </section>
-}
+// const Cards = () => {
+//   return <section className="min-h-96 my-20 px-24 flex items-center gap-12 justify-center">
+//     <Card />
+//     <Card />
+//     <Card />
+//   </section>
+// }
 
 
-const Card = () => {
-  return <div className=" aspect-[3/4] bg-neutral-100  w-72">
+// const Card = () => {
+//   return <div className=" aspect-[3/4] bg-neutral-100  w-72">
 
-  </div>
-}
+//   </div>
+// }
 
 const Banner = ({ color }: { color: 'green' | 'red'|'black' }) => {
   return <>

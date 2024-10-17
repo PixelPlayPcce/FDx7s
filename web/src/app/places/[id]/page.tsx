@@ -23,7 +23,7 @@ const InfoItem = ({ icon: Icon, text }:{icon:any;text:string}) => (
 const MenuItem = ({ name, price }:{name:string;price:number}) => (
   <div className="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow">
     <h3 className="font-bold mb-2">{name}</h3>
-    <p className="text-gray-600 text-sm">From ${price}</p>
+    <p className="text-gray-600 text-sm">From ₹{price}</p>
   </div>
 );
 
@@ -59,9 +59,9 @@ const RESTAURANT_INFO = {
 };
 
 const POPULAR_ITEMS = [
-  { name: "Classic Pao", price: 4.99 },
-  { name: "Portuguese Egg Tart", price: 5.99 },
-  { name: "Chocolate Truffle Cake", price: 24.99 }
+  { name: "Classic Pao", price: 20 },
+  { name: "Portuguese Egg Tart", price: 25 },
+  { name: "Chocolate Truffle Cake", price: 60 }
 ];
 
 const REVIEWS = [

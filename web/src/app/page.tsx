@@ -237,12 +237,16 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col items-end">
-              <h1 className="text-end font-bold text-3xl">
+              <motion.h1  initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }} className="text-end font-bold text-3xl">
                 {carousel[currentIndex].name}
-              </h1>
+              </motion.h1>
               <Link className="text-end underline" href={carousel[currentIndex].location.link}
               >
-                {carousel[currentIndex].location.text}
+                <motion.span  initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}>{carousel[currentIndex].location.text}</motion.span>
               </Link>
             </div>
           </div>
